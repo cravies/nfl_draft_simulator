@@ -1,5 +1,5 @@
 from matplotlib import pyplot as plt 
-import numpy as np
+import seaborn as sns
 
 def normalise_dict(d):
     # normalise a "count dict" to have a probability distribution 
@@ -23,7 +23,7 @@ def plot_results(fname):
         sp = line.split(',')
         team = sp[0]
         # some teams have multiple picks so need to demarcate between them
-        team = f'{team}_{i}'
+        team = f'{team}_{i+1}'
         player = sp[1].replace('\n','')
         #first time, add to dict
         if team not in picks:
@@ -34,7 +34,17 @@ def plot_results(fname):
         else:
             picks[team][player] += 1
     for team in picks:
-        print(team,": ",normalise_dict(picks[team]))
+        d = normalise_dict(picks[team])
+        keys = list(d.keys())
+        # get values in the same order as keys, and parse percentage values
+        vals = [d[k] for k in keys]
+        # word wrapping
+        keys =  [key.replace(' ','\n') for key in keys]
+        sns.barplot(x=keys, y=vals)
+        plt.xticks(rotation=90)
+        plt.tight_layout()
+        plt.savefig(team)
+        plt.close()
     f.close()
 
 if __name__=="__main__":

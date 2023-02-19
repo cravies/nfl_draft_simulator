@@ -140,7 +140,7 @@ class draftSimulator {
                 // check - pass if they are a QB and this team isn't taking one
                 // or if its a position this team has already taken
                 // or just randomly skip 10% of the time.
-                if ((myteams[t].taking_QB==false && pos=="QB") or contains(myteams[t].picks,pos) or (get_random()<=0.1)) {
+                if ((myteams[t].taking_QB==false && pos=="QB") or contains(myteams[t].picks,pos) or (get_random()<=0.05)) {
                     cout << "Team " << myteams[t].name << " avoided taking " << big_board[i].name << "\n";
                 } else {
                     for (int j=0; j<myteams.size(); j++) {
@@ -279,7 +279,7 @@ int main(){
     cout << "simulating\n";
     draftSimulator mock(players, teams);
     mock.print_teams();
-    mock.mock_draft(100);
+    mock.mock_draft(10000);
     vector<pick> p = mock.get_picks();
 
     // write to file
