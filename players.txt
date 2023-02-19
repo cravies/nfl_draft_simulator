@@ -1,33 +1,63 @@
-Bryce_Young QB 1
-Jalen_Carter DI 2
-Will_Anderson_Jr ED 3
-Will_Levis QB 4
-C.J_Stroud QB 5
-Devon_Witherspoon CB 6
-Tyree_Wilson ED 7
-Quentin_Johnston WR 8
-Brian_Branch S 9
-Christian_Gonzalez CB 10
-Anthony_Richardson QB 11
-Lukas_Van_Ness ED 12
-Paris_Johnson_Jr T 13
-Calijah_Kancey DI 14
-Peter_Skoronski T 15
-Bryan_Bresee DI 16
-Jordan_Addison WR 17
-Broderick_Jones T 18
-Myles_Murphy ED 19
-Jaxon_Smith-Njigba WR 20
-Joey_Porter_Jr CB 21
-Zay_Flowers WR 22
-Deonte_Banks CB 23
-Andre_Carter_II ED 24
-Dalton_Kincaid TE 25
-Nolan_Smith ED 26
-Bijan_Robinson RB 27
-Michael_Mayer TE 28
-Tanner_McKee QB 29
-Anton_Harrison T 30
-Will_McDonald T 31
-Antonio_Johnson S 32
-Luke_Musgrave TE 33
+Bryce_Young QB
+Jalen_Carter DI
+Will_Anderson_Jr ED
+Will_Levis QB
+C.J_Stroud QB
+Devon_Witherspoon CB
+Tyree_Wilson ED
+Quentin_Johnston WR
+Brian_Branch S
+Christian_Gonzalez CB
+Anthony_Richardson QB
+Lukas_Van_Ness ED
+Paris_Johnson_Jr T
+Calijah_Kancey DI
+Peter_Skoronski T
+Bryan_Bresee DI
+Jordan_Addison WR
+Broderick_Jones T
+Myles_Murphy ED
+Jaxon_Smith-Njigba WR
+Joey_Porter_Jr CB
+Zay_Flowers WR
+Deonte_Banks CB
+Andre_Carter_II ED
+Dalton_Kincaid TE
+Nolan_Smith ED
+Bijan_Robinson RB
+Michael_Mayer TE
+Tanner_McKee QB
+Anton_Harrison T
+Will_McDonald T
+Antonio_Johnson S
+Luke_Musgrave TE
+O'Cyrus_Torrence G
+Mazi_Smith DI
+Bj_Ojulari ED
+Nathaniel_Dell WR
+Daiyan_Henley LB
+Tyrique_Stevenson CB
+Josh_Downs WR
+Steve_Avila G
+Emmanuel_Forbes CB
+Tuli_Tuipulotu ED
+Dawand_Jones T
+Adetomiwa_Adebawore ED
+Felix_Anudike-Uzomah ED
+Luke_Wypler C
+Karl_Brooks ED
+Garrett_Williams CB
+Nick_Herbig ED
+Jahmyr_Gibbs RB
+John_Michael_Schmitz C
+Keion_White ED
+Matthew_Bergeron T
+Siaki_Ika DI
+Kayshon_Boutte WR
+Sam_Laporta TE
+Sydney_Brown S 
+Trenton_Simpson LB 
+Tre'Vius_Hodges-Tomlinson CB 
+Zach_Charbonnet RB 
+Joe_Tippmann C 
+Eli_Ricks CB

@@ -18,8 +18,8 @@ def plot_results(fname):
     lines = f.readlines()
     picks = {}
     for i,line in enumerate(lines):
-        # 31 picks a round so mod 31
-        i = i % 31
+        # 63 picks in first two rounds
+        i = i % 63
         sp = line.split(',')
         team = sp[0]
         # some teams have multiple picks so need to demarcate between them

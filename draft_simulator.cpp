@@ -28,6 +28,10 @@ struct team {
     // what percentage of the time will the team 
     // reach for a play who plays the position of need
     float reach_prob; 
+    // will this team take a quarterback if it is the BPA?
+    bool taking_QB;
+    // what position has this team picked at (for multi round drafts)
+    vector<string> picks;
 };
 
 struct pick {
@@ -83,7 +87,7 @@ class draftSimulator {
         void erase_need(team &t, string need) {
             // erase a need from a team
             t.needs.erase(remove(t.needs.begin(), t.needs.end(), need), t.needs.end());
-            cout << "erased " << need << "\n";
+            cout << "erased " << need << " from " << t.name << "\n";
         }
 
         void print_needs(team t) {
@@ -105,9 +109,11 @@ class draftSimulator {
                     // get rid of need from team needs list
                     print_needs(myteams[t]);
                     // erase for every version of team
-                    for (int i=0; i<myteams.size(); i++) {
-                        if (myteams[i].name==myteams[t].name) {
-                            erase_need(myteams[i],pos);
+                    for (int j=0; j<myteams.size(); j++) {
+                        if (myteams[j].name==myteams[t].name) {
+                            erase_need(myteams[j],pos);
+                            // add position to "picked" list
+                            myteams[j].picks.push_back(pos);
                         }
                     }
                     print_needs(myteams[t]);
@@ -120,7 +126,45 @@ class draftSimulator {
             }
         }
 
+        // just take the best player available (usually first on the board)
+        // unless the team doesn't need a QB, in which case they'll skip over them
+        // I.e the bears won't pick Bryce Young at 1 over Jalen Carter at 2.
+        void BPA(vector<team> &myteams, vector<player> &big_board, pick &mypick, int t) {
+            string pos;
+            vector <string> tneeds = myteams[t].needs;
+            // otherwise take BPA (best player available)
+            // might have to iterate until we get a non QB if we aren't taking a QB
+            for (int i=0; i<big_board.size(); i++) {
+                // if they match a need, erase from needs array
+                pos = big_board[i].pos;
+                // check - pass if they are a QB and this team isn't taking one
+                // or if its a position this team has already taken
+                if ((myteams[t].taking_QB==false && pos=="QB") or contains(myteams[t].picks,pos)) {
+                    cout << "Team " << myteams[t].name << " avoided taking " << big_board[i].name << "\n";
+                } else {
+                    for (int j=0; j<myteams.size(); j++) {
+                        if (myteams[j].name==myteams[t].name) {
+                            if (contains(tneeds,pos)) {
+                                // erase from needs every version of team (i.e texans 2, texans 12)
+                                erase_need(myteams[j],pos);
+                            }
+                            //add to "picked" list to avoid duplicate position picks
+                            myteams[j].picks.push_back(pos);
+                        }
+                    }
+                    cout << "~~~~~~~~~~~~~\n" << myteams[t].name << " BPA. " << big_board[i].name << "\n";
+                    // set player as pick
+                    mypick.player = big_board[i];
+                    // erase player (BPA) from big board
+                    big_board.erase(big_board.begin() + i);
+                    // pick made, exit
+                    return;
+                }
+            }
+        }
+
         void make_pick(vector<team> &myteams, int t, vector<player> &big_board, pick &mypick) {
+            cout << "Making pick \n";
             string pos;
             mypick.team = myteams[t];
             // see if we reach for a position of need.
@@ -131,20 +175,7 @@ class draftSimulator {
                 reach(myteams, big_board, mypick, t);
                 return;
             }
-            // otherwise take BPA (best player available)
-            mypick.player = big_board[0];
-            // if they match a need, erase from needs array
-            pos = big_board[0].pos;
-            if (contains(myteams[t].needs,pos)) {
-                // erase for every version of team
-                for (int i=0; i<myteams.size(); i++) {
-                    if (myteams[i].name==myteams[t].name) {
-                        erase_need(myteams[i],pos);
-                    }
-                }
-            }
-            // erase player (BPA) from big board
-            big_board.erase(big_board.begin() + 0);
+            BPA(myteams, big_board, mypick, t);
             return;
         }
 
@@ -205,8 +236,6 @@ vector<string> split(const string &s, char delim) {
 
 int main(){
 
-    int count = 0;
-
     // temp vars for player readin
     string name;
     string pos;
@@ -215,6 +244,7 @@ int main(){
     // temp vars for team readin
     string needs;
     float reach_prob;
+    string QB;
 
     // big board and team vectors
     vector <player> players;
@@ -222,27 +252,33 @@ int main(){
 
     // load players
     ifstream inputPlayers("players.txt");
-    while (inputPlayers >> name >> pos >> num) {
+    int count = 1;
+    while (inputPlayers >> name >> pos) {
         player p;
         p.name = regex_replace(name, regex("_"), " ");
         p.pos = pos;
-        p.num = num;
+        p.num = count;
         players.push_back(p);
+        count += 1;
     }
 
     // load teams
     ifstream inputTeam("teams.txt");
-    while (inputTeam >> name >> needs >> reach_prob) {
+    while (inputTeam >> name >> needs >> reach_prob >> QB) {
         team t;
         t.name = regex_replace(name, regex("_"), " ");
         t.needs = split(needs,',');
         t.reach_prob = reach_prob;
+        t.taking_QB = (QB=="Y") ? true : false;
+        cout << name << needs[0] << reach_prob << QB << "\n";
         teams.push_back(t);
     }
 
     // simulate draft 1000 times
+    cout << "simulating\n";
     draftSimulator mock(players, teams);
-    mock.mock_draft(1000);
+    mock.print_teams();
+    mock.mock_draft(100);
     vector<pick> p = mock.get_picks();
 
     // write to file

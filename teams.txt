@@ -1,31 +1,63 @@
-Bears WR,TE,T,G,C,DI,ED,LB,CB,S 0.9
-Texans QB,C,DI,ED 0.9
-Cardinals G,C,ED,CB 0.1
-Colts QB,T,G,C 0.9
-Seahawks G,C,DI,ED 0.6
-Lions DI,LB,CB 0.2
-Raiders QB,OL,DB 0.8
-Falcons QB,WR,ED,LB 0.3
-Panthers QB,RB,TE,ED 0.8
-Eagles WR,G,C 0.5
-Titans WR,T,ED 0.5
-Texans QB,C,DL 0.5
-Jets QB,T,LB 0.8
-Patriots QB,T,ED 0.5
-Packers WR,TE,ED,LB 0.5
-Commanders QB,G,C,LB 0.5
-Steelers T,LB,CB 0.5
-Lions DI,LB,CB 0.5
-Bucaneers QB,TE,G,C,DI 0.5
-Seahawks G,C,DL 0.5
-Chargers WR,T,LB,CB 0.5
-Ravens WR,ED,CB 0.8
-Vikings DI,LB,CB 0.5
-Jaguars C,G,DB 0.5
-Giants WR,TE,C,LB 0.5
-Cowboys WR,DI,LB 0.5
-Bills G,C,DB 0.5
-Bengals T,DI,CB 0.5
-Saints QB,DI,CB 0.8
-Eagles WR,G,C 0.5
-Chiefs WR,DL 0.5
+Bears WR,TE,T,G,C,DI,ED,LB,CB,S 0.9 N
+Texans QB,C,DI,ED 0.9 Y
+Cardinals G,C,ED,CB 0.1 N
+Colts QB,T,G,C 0.9 Y
+Seahawks G,C,DI,ED 0.6 Y
+Lions DI,LB,CB 0.2 Y
+Raiders QB,OL,DB 0.8 Y
+Falcons QB,WR,ED,LB 0.3 Y
+Panthers QB,RB,TE,ED 0.8 Y
+Eagles WR,G,C 0.5 Y
+Titans WR,T,ED 0.5 N
+Texans C,DL 0.5 N
+Jets QB,T,LB 0.8 Y
+Patriots QB,T,ED 0.5 Y
+Packers WR,TE,ED,LB 0.5 N
+Commanders QB,G,C,LB 0.5 Y
+Steelers T,LB,CB 0.5 N
+Lions DI,LB,CB 0.5 N
+Bucaneers QB,TE,G,C,DI 0.5 Y
+Seahawks G,C,DL 0.5 Y
+Chargers WR,T,LB,CB 0.5 N
+Ravens WR,ED,CB 0.8 Y
+Vikings DI,LB,CB 0.5 Y
+Jaguars C,G,CB,S 0.5 N
+Giants WR,TE,C,LB 0.5 N
+Cowboys WR,DI,LB 0.5 N
+Bills G,C,DB 0.5 N
+Bengals T,DI,CB 0.5 N
+Saints QB,DI,CB 0.8 Y
+Eagles WR,G,C 0.5 Y
+Chiefs WR,DL 0.5 N
+Steelers T,LB,CB 0.5 N
+Texans C,DI,ED 0.9 N
+Cardinals G,C,ED,CB 0.1 N
+Colts T,G,C 0.9 Y
+Rams T,C,G,ED,S 0.9 N
+Seahawks G,C,DI,ED 0.6 Y
+Raiders OL,DB 0.8 Y
+Panthers RB,TE,ED 0.8 Y
+Saints QB,DI,CB 0.8 Y
+Titans WR,T,ED 0.5 N
+Browns WR,DI,S 0.5 N
+Jets QB,T,LB 0.8 Y
+Falcons WR,ED,LB 0.3 Y
+Packers WR,TE,ED,LB 0.5 N
+Patriots QB,T,ED 0.5 Y
+Commanders QB,G,C,LB 0.5 Y
+Lions DI,LB,CB 0.5 N
+Steelers T,LB,CB 0.5 N
+Bucaneers QB,TE,G,C,DI 0.5 Y
+Seahawks G,C,DL 0.5 N
+Dolphins QB,T,C,G,CB 0.5 Y
+Chargers WR,T,LB,CB 0.5 N
+Bears WR,TE,T,G,C,DI,ED,LB,CB,S 0.9 N
+Lions DI,LB,CB 0.5 N
+Jaguars G,C,DB 0.5 N
+Giants WR,TE,C,LB 0.5 N
+Cowboys WR,DI,LB 0.5 N
+Bills G,C,DB 0.5 N
+Bengals T,DI,CB 0.5 N
+Eagles WR,G,C 0.5 N
+Panthers RB,TE,ED 0.8 Y
+Chiefs WR,DL 0.5 N
