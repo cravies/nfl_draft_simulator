@@ -29,3 +29,7 @@ struct team {
 Teams will sometimes (based on probabilities you set with reach_prob) randomly reach for a player at a position of need.
 Quarterback needy teams will do this way more often.
 Python file outputs probability distribution of each player landing at each team.
+Example output for my team (Jaguars) with pick 23
+```python
+Jaguars_23 :  {'Zay Flowers': 0.348, 'Joey Porter Jr': 0.318, 'Deonte Banks': 0.159, 'Jaxon Smith-Njigba': 0.115, 'Andre Carter II': 0.029, 'Broderick Jones': 0.022, 'Myles Murphy': 0.005, 'Bryan Bresee': 0.004}
+```
