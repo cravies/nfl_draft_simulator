@@ -1,0 +1,14 @@
+QB - Quarterback
+WR - Wide Reciever
+RB - Running Back
+TE - Tight End
+C - Center
+G - Guard
+T - Tackle
+CB - Cornerback
+S - Safety
+LB - Linebacker
+DI - Defensive interior
+ED - Edge / defensive end
+K - Kicker
+P - Punter

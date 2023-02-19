@@ -1,0 +1,10 @@
+Bears WR,TE,T,G,C,DI,ED,LB,CB,S 0.1
+Texans QB,C,DI,ED 0.6
+Cardinals G,C,ED,CB 0.4
+Colts QB,T,G,C 0.8
+Seahawks G,C,DI,ED 0.3
+Lions DI,LB,CB 0.2
+Raiders QB,OL,DB 0.6
+Falcons QB,WR,ED,LB 0.8
+Panthers QB,RB,TE,ED 0.9
+Eagles WR,G,C 0.1
