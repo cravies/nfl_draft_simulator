@@ -1,4 +1,4 @@
-Bears WR,TE,T,G,C,DI,ED,LB,CB,S 0.9 N
+Bears WR,TE,T,G,C,DI,ED,LB,CB,S 0.1 N
 Texans QB,C,DI,ED 0.9 Y
 Cardinals G,C,ED,CB 0.1 N
 Colts QB,T,G,C 0.9 Y

@@ -139,7 +139,8 @@ class draftSimulator {
                 pos = big_board[i].pos;
                 // check - pass if they are a QB and this team isn't taking one
                 // or if its a position this team has already taken
-                if ((myteams[t].taking_QB==false && pos=="QB") or contains(myteams[t].picks,pos)) {
+                // or just randomly skip 10% of the time.
+                if ((myteams[t].taking_QB==false && pos=="QB") or contains(myteams[t].picks,pos) or (get_random()<=0.1)) {
                     cout << "Team " << myteams[t].name << " avoided taking " << big_board[i].name << "\n";
                 } else {
                     for (int j=0; j<myteams.size(); j++) {
