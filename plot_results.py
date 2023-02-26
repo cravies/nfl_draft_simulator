@@ -1,6 +1,9 @@
 from matplotlib import pyplot as plt 
 import seaborn as sns
 
+# team filename
+NUM_TEAMS=sum(1 for _ in open('./settings/teams.txt'))
+
 def normalise_dict(d):
     # normalise a "count dict" to have a probability distribution 
     # over its entries
@@ -18,8 +21,9 @@ def plot_results(fname):
     lines = f.readlines()
     picks = {}
     for i,line in enumerate(lines):
-        # 63 picks in first two rounds
-        i = i % 63
+        # number of picks, need modulus if we are doing multiple simulations
+        # and thus have multiple of the same pick
+        i = i % NUM_TEAMS
         sp = line.split(',')
         team = sp[0]
         # some teams have multiple picks so need to demarcate between them
@@ -43,9 +47,9 @@ def plot_results(fname):
         sns.barplot(x=keys, y=vals)
         plt.xticks(rotation=90)
         plt.tight_layout()
-        plt.savefig(team)
+        plt.savefig(f'./output/{team}')
         plt.close()
     f.close()
 
 if __name__=="__main__":
-    plot_results("draft.txt")
+    plot_results("./output/draft.txt")

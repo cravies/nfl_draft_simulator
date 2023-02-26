@@ -186,7 +186,7 @@ int main(){
     vector <team> teams;
 
     // load players
-    ifstream inputPlayers("players.txt");
+    ifstream inputPlayers("./settings/players.txt");
     int count = 1;
     while (inputPlayers >> name >> pos) {
         player p;
@@ -198,7 +198,7 @@ int main(){
     }
 
     // load teams
-    ifstream inputTeam("teams.txt");
+    ifstream inputTeam("./settings/teams.txt");
     while (inputTeam >> name >> needs >> reach_prob >> QB) {
         team t;
         t.name = regex_replace(name, regex("_"), " ");
@@ -217,5 +217,5 @@ int main(){
     vector<pick> p = mock.get_picks();
 
     // write to file
-    write_picks(p, "draft.txt");
+    write_picks(p, "./output/draft.txt");
 }

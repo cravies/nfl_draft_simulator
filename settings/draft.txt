@@ -1,0 +1,310 @@
+Bears,Jalen Carter
+Texans,Bryce Young
+Cardinals,Will Anderson Jr
+Colts,Will Levis
+Seahawks,Tyree Wilson
+Lions,C.J Stroud
+Raiders,Anthony Richardson
+Falcons,Devon Witherspoon
+Panthers,Quentin Johnston
+Eagles,Jordan Addison
+Titans,Brian Branch
+Texans,Christian Gonzalez
+Jets,Lukas Van Ness
+Patriots,Paris Johnson Jr
+Packers,Calijah Kancey
+Commanders,Peter Skoronski
+Steelers,Broderick Jones
+Lions,Bryan Bresee
+Bucaneers,Dalton Kincaid
+Seahawks,O'Cyrus Torrence
+Chargers,Jaxon Smith-Njigba
+Ravens,Myles Murphy
+Vikings,Joey Porter Jr
+Jaguars,Deonte Banks
+Giants,Zay Flowers
+Cowboys,Andre Carter II
+Bills,Nolan Smith
+Bengals,Bijan Robinson
+Saints,Tanner McKee
+Eagles,Steve Avila
+Chiefs,Michael Mayer
+Bears,Will Anderson Jr
+Texans,Bryce Young
+Cardinals,Jalen Carter
+Colts,Will Levis
+Seahawks,Tyree Wilson
+Lions,C.J Stroud
+Raiders,Anthony Richardson
+Falcons,Devon Witherspoon
+Panthers,Lukas Van Ness
+Eagles,Quentin Johnston
+Titans,Christian Gonzalez
+Texans,Brian Branch
+Jets,Paris Johnson Jr
+Patriots,Calijah Kancey
+Packers,Jordan Addison
+Commanders,Tanner McKee
+Steelers,Peter Skoronski
+Lions,Bryan Bresee
+Bucaneers,Dalton Kincaid
+Seahawks,O'Cyrus Torrence
+Chargers,Broderick Jones
+Ravens,Myles Murphy
+Vikings,Jaxon Smith-Njigba
+Jaguars,Zay Flowers
+Giants,Michael Mayer
+Cowboys,Joey Porter Jr
+Bills,Steve Avila
+Bengals,Deonte Banks
+Saints,Mazi Smith
+Eagles,Nolan Smith
+Chiefs,Andre Carter II
+Bears,Jalen Carter
+Texans,Bryce Young
+Cardinals,Will Anderson Jr
+Colts,Will Levis
+Seahawks,Tyree Wilson
+Lions,C.J Stroud
+Raiders,Anthony Richardson
+Falcons,Devon Witherspoon
+Panthers,Quentin Johnston
+Eagles,Brian Branch
+Titans,Lukas Van Ness
+Texans,Calijah Kancey
+Jets,Christian Gonzalez
+Patriots,Paris Johnson Jr
+Packers,Jordan Addison
+Commanders,Peter Skoronski
+Steelers,Broderick Jones
+Lions,Bryan Bresee
+Bucaneers,Myles Murphy
+Seahawks,O'Cyrus Torrence
+Chargers,Jaxon Smith-Njigba
+Ravens,Joey Porter Jr
+Vikings,Zay Flowers
+Jaguars,Deonte Banks
+Giants,Dalton Kincaid
+Cowboys,Andre Carter II
+Bills,Steve Avila
+Bengals,Nolan Smith
+Saints,Tanner McKee
+Eagles,Michael Mayer
+Chiefs,Bijan Robinson
+Bears,Jalen Carter
+Texans,Bryce Young
+Cardinals,Will Anderson Jr
+Colts,Will Levis
+Seahawks,Tyree Wilson
+Lions,Devon Witherspoon
+Raiders,C.J Stroud
+Falcons,Quentin Johnston
+Panthers,Anthony Richardson
+Eagles,Jordan Addison
+Titans,Brian Branch
+Texans,Christian Gonzalez
+Jets,Lukas Van Ness
+Patriots,Paris Johnson Jr
+Packers,Calijah Kancey
+Commanders,Peter Skoronski
+Steelers,Broderick Jones
+Lions,Bryan Bresee
+Bucaneers,Myles Murphy
+Seahawks,Jaxon Smith-Njigba
+Chargers,Joey Porter Jr
+Ravens,Zay Flowers
+Vikings,Deonte Banks
+Jaguars,Andre Carter II
+Giants,Dalton Kincaid
+Cowboys,Nolan Smith
+Bills,O'Cyrus Torrence
+Bengals,Anton Harrison
+Saints,Bijan Robinson
+Eagles,Steve Avila
+Chiefs,Nathaniel Dell
+Bears,Jalen Carter
+Texans,Bryce Young
+Cardinals,Will Anderson Jr
+Colts,Will Levis
+Seahawks,C.J Stroud
+Lions,Devon Witherspoon
+Raiders,Anthony Richardson
+Falcons,Tyree Wilson
+Panthers,Lukas Van Ness
+Eagles,Quentin Johnston
+Titans,Brian Branch
+Texans,Christian Gonzalez
+Jets,Paris Johnson Jr
+Patriots,Peter Skoronski
+Packers,Jordan Addison
+Commanders,Calijah Kancey
+Steelers,Bryan Bresee
+Lions,Broderick Jones
+Bucaneers,Dalton Kincaid
+Seahawks,Myles Murphy
+Chargers,Jaxon Smith-Njigba
+Ravens,Joey Porter Jr
+Vikings,Deonte Banks
+Jaguars,Michael Mayer
+Giants,Zay Flowers
+Cowboys,Mazi Smith
+Bills,Andre Carter II
+Bengals,Anton Harrison
+Saints,Tanner McKee
+Eagles,O'Cyrus Torrence
+Chiefs,Nolan Smith
+Bears,Jalen Carter
+Texans,Bryce Young
+Cardinals,Will Anderson Jr
+Colts,Will Levis
+Seahawks,C.J Stroud
+Lions,Quentin Johnston
+Raiders,Devon Witherspoon
+Falcons,Tyree Wilson
+Panthers,Brian Branch
+Eagles,Jordan Addison
+Titans,Christian Gonzalez
+Texans,Lukas Van Ness
+Jets,Paris Johnson Jr
+Patriots,Anthony Richardson
+Packers,Myles Murphy
+Commanders,Tanner McKee
+Steelers,Calijah Kancey
+Lions,Peter Skoronski
+Bucaneers,Bryan Bresee
+Seahawks,Broderick Jones
+Chargers,Jaxon Smith-Njigba
+Ravens,Joey Porter Jr
+Vikings,Zay Flowers
+Jaguars,Deonte Banks
+Giants,Andre Carter II
+Cowboys,Mazi Smith
+Bills,Dalton Kincaid
+Bengals,Nolan Smith
+Saints,Tyrique Stevenson
+Eagles,O'Cyrus Torrence
+Chiefs,Nathaniel Dell
+Bears,Jalen Carter
+Texans,Bryce Young
+Cardinals,Will Anderson Jr
+Colts,Will Levis
+Seahawks,C.J Stroud
+Lions,Devon Witherspoon
+Raiders,Tyree Wilson
+Falcons,Quentin Johnston
+Panthers,Anthony Richardson
+Eagles,Brian Branch
+Titans,Christian Gonzalez
+Texans,Lukas Van Ness
+Jets,Paris Johnson Jr
+Patriots,Peter Skoronski
+Packers,Jordan Addison
+Commanders,Tanner McKee
+Steelers,Calijah Kancey
+Lions,Bryan Bresee
+Bucaneers,Dalton Kincaid
+Seahawks,O'Cyrus Torrence
+Chargers,Broderick Jones
+Ravens,Myles Murphy
+Vikings,Joey Porter Jr
+Jaguars,Jaxon Smith-Njigba
+Giants,Zay Flowers
+Cowboys,Deonte Banks
+Bills,Steve Avila
+Bengals,Anton Harrison
+Saints,Mazi Smith
+Eagles,Andre Carter II
+Chiefs,Nathaniel Dell
+Bears,Jalen Carter
+Texans,Bryce Young
+Cardinals,Will Anderson Jr
+Colts,Will Levis
+Seahawks,C.J Stroud
+Lions,Devon Witherspoon
+Raiders,Anthony Richardson
+Falcons,Tyree Wilson
+Panthers,Lukas Van Ness
+Eagles,Quentin Johnston
+Titans,Brian Branch
+Texans,Calijah Kancey
+Jets,Paris Johnson Jr
+Patriots,Christian Gonzalez
+Packers,Peter Skoronski
+Commanders,Tanner McKee
+Steelers,Broderick Jones
+Lions,Bryan Bresee
+Bucaneers,Dalton Kincaid
+Seahawks,Jordan Addison
+Chargers,Myles Murphy
+Ravens,Jaxon Smith-Njigba
+Vikings,Joey Porter Jr
+Jaguars,Deonte Banks
+Giants,Zay Flowers
+Cowboys,Mazi Smith
+Bills,O'Cyrus Torrence
+Bengals,Anton Harrison
+Saints,Tyrique Stevenson
+Eagles,Andre Carter II
+Chiefs,Nolan Smith
+Bears,Jalen Carter
+Texans,Bryce Young
+Cardinals,Will Anderson Jr
+Colts,Will Levis
+Seahawks,C.J Stroud
+Lions,Devon Witherspoon
+Raiders,Tyree Wilson
+Falcons,Quentin Johnston
+Panthers,Anthony Richardson
+Eagles,Brian Branch
+Titans,Lukas Van Ness
+Texans,Christian Gonzalez
+Jets,Paris Johnson Jr
+Patriots,Peter Skoronski
+Packers,Calijah Kancey
+Commanders,Jordan Addison
+Steelers,Bryan Bresee
+Lions,Mazi Smith
+Bucaneers,Dalton Kincaid
+Seahawks,Broderick Jones
+Chargers,Myles Murphy
+Ravens,Jaxon Smith-Njigba
+Vikings,Zay Flowers
+Jaguars,Joey Porter Jr
+Giants,Michael Mayer
+Cowboys,Nathaniel Dell
+Bills,Deonte Banks
+Bengals,Anton Harrison
+Saints,Tanner McKee
+Eagles,O'Cyrus Torrence
+Chiefs,Andre Carter II
+Bears,Jalen Carter
+Texans,Bryce Young
+Cardinals,Will Anderson Jr
+Colts,C.J Stroud
+Seahawks,Tyree Wilson
+Lions,Devon Witherspoon
+Raiders,Will Levis
+Falcons,Quentin Johnston
+Panthers,Anthony Richardson
+Eagles,Brian Branch
+Titans,Christian Gonzalez
+Texans,Lukas Van Ness
+Jets,Paris Johnson Jr
+Patriots,Calijah Kancey
+Packers,Jordan Addison
+Commanders,Tanner McKee
+Steelers,Peter Skoronski
+Lions,Bryan Bresee
+Bucaneers,Broderick Jones
+Seahawks,Jaxon Smith-Njigba
+Chargers,Joey Porter Jr
+Ravens,Myles Murphy
+Vikings,Zay Flowers
+Jaguars,Deonte Banks
+Giants,Dalton Kincaid
+Cowboys,Mazi Smith
+Bills,Andre Carter II
+Bengals,Anton Harrison
+Saints,Nolan Smith
+Eagles,O'Cyrus Torrence
+Chiefs,Bijan Robinson
