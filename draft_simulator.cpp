@@ -8,36 +8,10 @@
 #include <random>
 #include <sstream>
 #include <algorithm>
+#include "utils.h"
+#include "data_structures.h"
 
 using namespace std;
-
-// Player struct
-struct player {
-    string name; // player name
-    string pos; // position
-    int num; // PFF big board ranking
-};
-
-// Team struct
-// Note that for teams with multiple picks there will be multiple of these in the array
-struct team {
-    string name;
-    // array of csv positional team needs (per PFF)
-    // i.e [G,C,WR]
-    vector<string> needs;
-    // what percentage of the time will the team 
-    // reach for a play who plays the position of need
-    float reach_prob; 
-    // will this team take a quarterback if it is the BPA?
-    bool taking_QB;
-    // what position has this team picked at (for multi round drafts)
-    vector<string> picks;
-};
-
-struct pick {
-    player player;
-    team team;
-};
 
 // mock draft simulator class
 class draftSimulator {
@@ -72,17 +46,6 @@ class draftSimulator {
                 cout << "team name: " << t.name << "\n";
             }
         }
-
-        float get_random() {
-            // get random float from (0->1)
-            static default_random_engine e;
-            static uniform_real_distribution<> dis(0, 1); // rage 0 - 1
-            return dis(e);
-        }
-
-        // see if an array contains something
-        template<class C, typename T>
-        bool contains(C&& c, T e) { return find(begin(c), end(c), e) != end(c); };
 
         void erase_need(team &t, string need) {
             // erase a need from a team
@@ -206,35 +169,6 @@ class draftSimulator {
         }
 };
 
-// Write all our simulated picks to a file
-void write_picks(vector<pick> &p, string fname) {
-    // Open file fname
-    ofstream MyFile(fname);
-    // Write to the file
-    string team;
-    string player;
-    for (int i=0; i<p.size(); i++) {
-        MyFile << p[i].team.name << "," << p[i].player.name << "\n";
-    }
-    // Close the file
-    MyFile.close();
-}
-
-// for string splitting team needs "G,C,LB" into array -> ["G","C","LB"]
-template <typename Out>
-void split(const string &s, char delim, Out result) {
-    istringstream iss(s);
-    string item;
-    while (getline(iss, item, delim)) {
-        *result++ = item;
-    }
-}
-vector<string> split(const string &s, char delim) {
-    vector<string> elems;
-    split(s, delim, back_inserter(elems));
-    return elems;
-}
-
 int main(){
 
     // temp vars for player readin
@@ -279,7 +213,7 @@ int main(){
     cout << "simulating\n";
     draftSimulator mock(players, teams);
     mock.print_teams();
-    mock.mock_draft(10000);
+    mock.mock_draft(10);
     vector<pick> p = mock.get_picks();
 
     // write to file
