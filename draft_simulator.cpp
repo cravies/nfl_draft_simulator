@@ -170,50 +170,18 @@ class draftSimulator {
 };
 
 int main(){
-
-    // temp vars for player readin
-    string name;
-    string pos;
-    int num;
-
-    // temp vars for team readin
-    string needs;
-    float reach_prob;
-    string QB;
-
     // big board and team vectors
     vector <player> players;
     vector <team> teams;
 
-    // load players
-    ifstream inputPlayers("./settings/players.txt");
-    int count = 1;
-    while (inputPlayers >> name >> pos) {
-        player p;
-        p.name = regex_replace(name, regex("_"), " ");
-        p.pos = pos;
-        p.num = count;
-        players.push_back(p);
-        count += 1;
-    }
-
-    // load teams
-    ifstream inputTeam("./settings/teams.txt");
-    while (inputTeam >> name >> needs >> reach_prob >> QB) {
-        team t;
-        t.name = regex_replace(name, regex("_"), " ");
-        t.needs = split(needs,',');
-        t.reach_prob = reach_prob;
-        t.taking_QB = (QB=="Y") ? true : false;
-        cout << name << needs[0] << reach_prob << QB << "\n";
-        teams.push_back(t);
-    }
+    load_players("./settings/players.txt", players);
+    load_teams("./settings/teams.txt", teams);
 
     // simulate draft 1000 times
     cout << "simulating\n";
     draftSimulator mock(players, teams);
     mock.print_teams();
-    mock.mock_draft(10);
+    mock.mock_draft(100);
     vector<pick> p = mock.get_picks();
 
     // write to file
