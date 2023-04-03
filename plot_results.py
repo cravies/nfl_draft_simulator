@@ -2,7 +2,7 @@ from matplotlib import pyplot as plt
 import seaborn as sns
 
 # team filename
-NUM_TEAMS=sum(1 for _ in open('./settings/teams.txt'))
+NUM_TEAMS=sum(1 for _ in open('./settings/teams_pff.txt'))
 
 def normalise_dict(d):
     # normalise a "count dict" to have a probability distribution 

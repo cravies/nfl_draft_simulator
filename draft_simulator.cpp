@@ -174,13 +174,14 @@ int main(){
     vector <player> players;
     vector <team> teams;
 
-    load_players("./settings/players.txt", players);
-    load_teams("./settings/teams.txt", teams);
+    load_players("./settings/players_ringer.txt", players);
+    load_teams("./settings/teams_cbs.txt", teams);
 
     // simulate draft 1000 times
     cout << "simulating\n";
     draftSimulator mock(players, teams);
-    mock.print_teams();
+    //mock.print_board();
+    //mock.print_teams();
     mock.mock_draft(100);
     vector<pick> p = mock.get_picks();
 

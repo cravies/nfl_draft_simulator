@@ -47,6 +47,25 @@ void write_picks(vector<pick> &p, string fname) {
     MyFile.close();
 }
 
+void sort_by_position_value(vector<player> &players) {
+    // let's sort by positional value
+    // based on analysis at https://overthecap.com/positional-value-in-the-nfl
+    map<string, double> posValue;
+    posValue["QB"]=2.94;
+    posValue["ED"]=1.63;
+    posValue["WR"]=1.46;
+    posValue["T"]=(1.37+1.03)/2; // halfway between LT and RT, model doesn't seperate yet
+    posValue["DI"]=1.37;
+    posValue["CB"]=1.23;
+    posValue["LB"]=1.13;
+    posValue["S"]=1.04;
+    posValue["G"]=0.99;
+    posValue["RB"]=0.89;
+    posValue["TE"]=0.85;
+    posValue["C"]=0.77;
+    cout << "done" << endl;
+}
+
 void load_players(string filename, vector<player> &players) {
     // temp vars for player readin
     string name;
@@ -62,6 +81,8 @@ void load_players(string filename, vector<player> &players) {
         players.push_back(p);
         count += 1;
     }
+    // sort by positional value
+    // sort_by_position_value(players);
 }
 
 void load_teams(string filename, vector<team> &teams) {
@@ -74,7 +95,7 @@ void load_teams(string filename, vector<team> &teams) {
     float reach_prob;
     string QB;
     // load teams
-    ifstream inputTeam("./settings/teams.txt");
+    ifstream inputTeam(filename);
     while (inputTeam >> name >> needs >> reach_prob >> QB) {
         team t;
         t.name = regex_replace(name, regex("_"), " ");
