@@ -10,7 +10,7 @@ using namespace std;
 struct player {
     string name; // player name
     string pos; // position
-    int num; // PFF big board ranking
+    double num; // value ranking
 };
 
 // Team struct

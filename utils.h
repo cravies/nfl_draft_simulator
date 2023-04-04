@@ -47,6 +47,10 @@ void write_picks(vector<pick> &p, string fname) {
     MyFile.close();
 }
 
+bool sortByNum(const player& a, const player& b) {
+    return a.num < b.num;
+}
+
 void sort_by_position_value(vector<player> &players) {
     // let's sort by positional value
     // based on analysis at https://overthecap.com/positional-value-in-the-nfl
@@ -64,15 +68,22 @@ void sort_by_position_value(vector<player> &players) {
     posValue["TE"]=0.85;
     posValue["C"]=0.77;
     cout << "done" << endl;
+    for (player p : players) {
+        // scale draft board slot by positional value
+        p.num *= 1/(posValue[p.pos]);
+        cout << "player: " << p.name << " " << p.num << endl;
+    }
+    // sort by calculated worth
+    sort(players.begin(), players.end(), sortByNum);
 }
 
-void load_players(string filename, vector<player> &players) {
+void load_players(string filename, vector<player> &players, bool pos_value) {
     // temp vars for player readin
     string name;
     string pos;
     // load players
     ifstream inputPlayers(filename);
-    int count = 1;
+    double count = 1.0;
     while (inputPlayers >> name >> pos) {
         player p;
         p.name = regex_replace(name, regex("_"), " ");
@@ -82,7 +93,9 @@ void load_players(string filename, vector<player> &players) {
         count += 1;
     }
     // sort by positional value
-    // sort_by_position_value(players);
+    if (pos_value) {
+        sort_by_position_value(players);
+    }
 }
 
 void load_teams(string filename, vector<team> &teams) {

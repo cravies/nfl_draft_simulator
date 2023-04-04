@@ -27,7 +27,7 @@ def plot_results(fname):
         sp = line.split(',')
         team = sp[0]
         # some teams have multiple picks so need to demarcate between them
-        team = f'{team}_{i+1}'
+        team = f'{i+1}_{team}'
         player = sp[1].replace('\n','')
         #first time, add to dict
         if team not in picks:

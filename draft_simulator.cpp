@@ -102,9 +102,11 @@ class draftSimulator {
                 pos = big_board[i].pos;
                 // check - pass if they are a QB and this team isn't taking one
                 // or if its a position this team has already taken
-                // or just randomly skip 10% of the time.
-                if ((myteams[t].taking_QB==false && pos=="QB") or contains(myteams[t].picks,pos) or (get_random()<=0.05)) {
-                    cout << "Team " << myteams[t].name << " avoided taking " << big_board[i].name << "\n";
+                // or just randomly skip 10% of the time (assuming we aren't looking for a qb)
+                if ((myteams[t].taking_QB==false && pos=="QB") or 
+                    contains(myteams[t].picks,pos) or 
+                    (myteams[t].taking_QB==false && get_random()<=0.10)) {
+                        cout << "Team " << myteams[t].name << " avoided taking " << big_board[i].name << "\n";
                 } else {
                     for (int j=0; j<myteams.size(); j++) {
                         if (myteams[j].name==myteams[t].name) {
@@ -174,7 +176,8 @@ int main(){
     vector <player> players;
     vector <team> teams;
 
-    load_players("./settings/players_ringer.txt", players);
+    // not sorting by positional value
+    load_players("./settings/players_pff.txt", players, false);
     load_teams("./settings/teams_cbs.txt", teams);
 
     // simulate draft 1000 times
